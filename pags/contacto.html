@@ -1,0 +1,78 @@
+
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<title>Dream</title>
+	<meta name = "desciption" content = "Soluciones para tu empresa, hay cosas que sencillamente no pueden esperar">
+
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="icon" type="image/png" href="../img/ollin.png" />
+	<script src="../js/validaciones.js"></script>
+</head>
+
+<body>
+	<header><h1>Universoft</h1></header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="servicios.html">Servicios</a>
+					<ul>
+						<li><a href="servicios.html">Página Web</a></li>
+						<li><a href="servicios.html">Sitio Administrativo</a></li>
+						<li><a href="servicios.html">Sitio de Comercio Electrónico</a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>	
+		</nav>	
+	<section id="contenido">
+		<article>
+		<p>Llena los siguientes datos y mandanos tu petición, nos encantaria escuchar sobre tu próximo proyecto, te contestaremos con mucho gusto</p>
+		<form id="contacto_frm" name = "contacto_frm" action='../php/contacto_check.php' method="post">
+			<fieldset>
+				<legend>Contacto</legend>
+				<label for = "nombre">Nombre:</label> 
+				<input type="text" id = "nombre" name="nombre_txt" class = "cambio"><br/>
+				<label for = "app">Apellido Paterno:</label> 
+				<input type="text" id = "app" name="app_txt" class = "cambio"><br/>
+				<label for = "apm">Apellido Materno:</label>
+				<input type="text" id = "apm" name="apm_txt" class = "cambio"><br/>
+				<label for = "tel">Teléfono: </label>
+				<input type="text" id = "tel" name="tel_txt" class = "cambio"><br/>
+				<label for = "email">Correo electrónico: </label>
+				<input type="text" id = "email" name="email_txt"  placeholder="user@server.com" class = "cambio"><br/>
+				<label for = "comentarios">¿Cómo podemos ayudarte?:</label><br/>
+				<textarea id = "comentarios" name="comentarios_txa" cols = "25" rows = "8" class = "cambio"></textarea><br/><br/>
+				<input type = "button" id = "limpiar" name = "limpiar_btn" value = "Limpiar" class = "cambio">
+				<input type = "button" id = "enviar" name = "enviar_btn" value = "Enviar" class = "cambio">
+				<br>Todos los campos son obligatorios
+ 			</fieldset>
+		</form>
+		</article>
+
+		<aside>
+			Redes sociales:
+			<br/><br/>
+			<!-- Twitter -->
+			<script src="http://platform.twitter.com/widgets.js"></script>
+			<a href="http://twitter.com/share" class = "twitter-share-button" data-text = "Diseño web #HayCosasQueNoPuedenEsperar" data-count = "vertical">Twittear</a>
+			 
+			<!-- Facebook -->
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>	
+
+			<div class="fb-like" data-href="https://www.facebook.com/UniversoftMx" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+		</aside>
+	</section>
+	<footer>Soluciones web al alcance de tu navegador.</footer>
+</body>
+</html>

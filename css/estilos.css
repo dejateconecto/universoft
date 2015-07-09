@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../fonts/caviardreams-webfont.eot');
+    src: url('../fonts/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caviardreams-webfont.woff') format('woff'),
+         url('../fonts/caviardreams-webfont.ttf') format('truetype'),
+         url('../fonts/caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/pacifico-webfont.eot');
+    src: url('../fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pacifico-webfont.woff') format('woff'),
+         url('../fonts/pacifico-webfont.ttf') format('truetype'),
+         url('../fonts/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+aside
+{
+	text-align: right;
+}
+body
+{
+	background-image: url("../img/bg8.jpg");
+	background-repeat: 100%;
+	background-attachment: fixed; 
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'caviar_dreamsregular';
+}
+fieldset
+{
+	background: rgba(0, 0, 0, 0);;
+	border: thin solid #FFF;
+	border-radius: 1em;
+	padding: 1em;
+	text-align: center;
+	/*margin: .5em auto;
+	max-width: 40%;*/
+}
+footer
+{
+	background-color: rgba(19, 27, 27, 0.8);
+	color: aliceblue;
+	height: 50px;
+	margin: 5px 5% 0 5%;
+	text-align: center;
+}
+h1
+{
+	font-size: 1.7em;
+}
+header
+{
+	background-color: #000;
+	color: lavender;
+	display: block;
+	height: 50px;
+	margin: 10px 5% 0 5%;
+	padding: .6em;
+}
+input[type="button"]
+{
+	background: white;
+	border: thin solid black;
+	border-radius: .5em;
+	color: #000;
+	cursor: pointer;
+	font-size: 1em;
+	font-family: 'caviar_dreamsregular';
+	padding: .5em;
+}
+input[type="button"]:hover
+{
+	background: black;
+	border: thin solid white;
+	border-radius: 0;
+	color: #FFF;
+}
+input[type="text"], textarea
+{
+	background: white;
+	border: thin solid #000;
+	border-radius: 1em;
+	color: #000;
+	font-size: 1em;
+	padding: .25em;
+}
+input[type = "text"]:focus, textarea:focus
+{
+	background: black;
+	border: thin solid #FFF;
+	color: lavender;
+}
+label
+{
+	cursor: pointer;
+}
+legend
+{
+	color: lavender;
+	font-size: 2em;
+	font-weight: bold;
+}
+ul, ol
+{
+	list-style: none;
+}
+nav
+{
+	margin-left: 68%;
+}
+nav ul li a 
+{
+	background-color: #000;
+	color: #FFF;
+	display: block;
+	padding: .3em;
+	text-decoration: none;
+}
+nav > ul > li
+{
+	float: left;
+}
+nav ul li a:hover
+{
+ background-color: #434343;
+}
+nav ul li ul
+{
+	display: none;
+	position: absolute;
+	min-width: 100px;
+}
+nav ul li:hover > ul
+{
+	display: block;
+}
+p#tecno-1
+{
+	background-color: rgba(150,75,0,1);
+	border-radius: .25em;
+	display: block;
+	font-size: 1.5em;
+	font-weight: 800;
+	margin: auto;
+	padding: .25em;
+	text-align: center;
+}
+p#tecno-2
+{
+	background-color: rgba(48,213,200,1);
+	border-radius: .25em;
+	display: block;
+	font-size: 2.5em;
+	margin: 3px auto;
+	padding: .2em;
+	text-align: right;
+}
+p#tecno-3
+{
+	background-color: rgba(0,0,0,.8);
+	border-radius: .25em;
+	display: block;
+	font-size: 1em;
+	font-weight: 900;
+	margin: 3px auto;
+	padding: .5em;
+}
+p#tecno-4
+{
+	background-color: aliceblue;
+	border-radius: .25em;
+	color: #000;
+	display: block;
+	font-family: 'pacificoregular';
+	font-size: 1.75em;
+	margin: 3px auto;
+	padding: .05em;
+	text-align: center;
+}
+section#contenido
+{
+	border: thin solid #000;
+	border-radius: .5em;
+	background-color: rgba(19, 27, 27, 0.8);
+	color: aliceblue;
+	display: block;
+	margin: 40px 5% 15px 5%;
+	padding: 2em;
+	height: auto;
+	/*opacity:0.3;*/
+}
+section#center
+{
+	text-align: center;
+}
+section#demo
+{
+	background-color: rgba(230,95,0,.9);
+	border-radius: .5em;
+	display: block;
+	margin: 10px 10%;
+	min-height: 200px;
+	padding: .5em;
+}
+textarea
+{
+	resize: none;
+}
+.cambio
+{
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+:focus
+{
+	box-shadow: .1em .1em .5em rgba(255,102,0,.5);
+	outline: thin solid aliceblue;
+}
